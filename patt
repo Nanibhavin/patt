@@ -1,0 +1,118 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int rows, coef = 1;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = 0; i < rows; i++)
+    {
+        for(int space = 1; space <= rows-i; space++)
+            cout <<"  ";
+
+        for(int j = 0; j <= i; j++)
+        {
+            if (j == 0 || i == 0)
+                coef = 1;
+            else
+                coef = coef*(i-j+1)/j;
+
+            cout << coef << "   ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+Example 10: Print Floyd's Triangle.
+1
+2 3
+4 5 6
+7 8 9 10
+Source Code
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int rows, number = 1;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = 1; i <= rows; i++)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << number << " ";
+            ++number;
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+Share on:
+Did you find this article helpful?
+Related Examples
+C++ Example
+
+Multiply Two Matrix Using Multi-dimensional Arrays
+
+C++ Example
+
+Find Transpose of a Matrix
+
+C++ Example
+
+Add Two Matrix Using Multi-dimensional Arrays
+
+C++ Example
+
+Multiply two Matrices by Passing Matrix to Function
+
+
+Join our newsletter for the latest updates.
+Enter Email Address*
+Join
+
+
+Tutorials
+Python 3 Tutorial
+JavaScript Tutorial
+SQL Tutorial
+C Tutorial
+Java Tutorial
+Kotlin Tutorial
+C++ Tutorial
+Swift Tutorial
+C# Tutorial
+Go Tutorial
+DSA Tutorial
+Examples
+Python Examples
+JavaScript Examples
+C Examples
+Java Examples
+Kotlin Examples
+C++ Examples
+Company
+About
+Advertising
+Privacy Policy
+Terms & Conditions
+Contact
+Blog
+Youtube
+Apps
+Learn Python
+Learn C Programming
+Learn Java
+© Parewa Labs Pvt. Ltd. All rights reserved.
+
+   
